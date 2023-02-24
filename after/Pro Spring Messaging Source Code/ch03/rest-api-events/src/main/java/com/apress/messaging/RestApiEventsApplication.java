@@ -9,8 +9,10 @@ import org.springframework.context.annotation.Bean;
 
 import com.apress.messaging.domain.Rate;
 import com.apress.messaging.service.CurrencyService;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
+@EnableAsync
 public class RestApiEventsApplication {
 
 	public static void main(String[] args) {
